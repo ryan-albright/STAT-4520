@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # Question 1
 w_0 = np.pi / 20
-A = np.tan(w_0 /2 )
+A = np.tan(w_0 / 2)
 
 b0 = A**2
 b1 = 2*A**2
@@ -20,9 +20,9 @@ for t in range(2, X.size):
     rhs = b0 *X[t] + b1*X[t-1] + b2*X[t-2]
     Y[t] = (rhs - a1*Y[t-1] - a2*Y[t-2]) / a0
 
-# plt.plot(X, label = 'Original Data')
+plt.plot(X, label = 'Original Data')
 plt.plot(Y, label = 'Filtered Data')
-# plt.legend()
+plt.legend()
 plt.show()
 
 # Question 2
@@ -44,9 +44,9 @@ for t in range(2, X.size):
     rhs = b0 *X[t] + b1*X[t-1] + b2*X[t-2]
     Y[t] = (rhs - a1*Y[t-1] - a2*Y[t-2]) / a0
 
-# plt.plot(X, label = 'Original Data')
+plt.plot(X, label = 'Original Data')
 plt.plot(Y, label = 'Filtered Data')
-# plt.legend()
+plt.legend()
 plt.show()
 
 # Question 3
@@ -70,9 +70,9 @@ for t in range(2, X.size):
     rhs = b0 *X[t] + b2*X[t-2]
     Y[t] = (rhs - a1*Y[t-1] - a2*Y[t-2]) / a0
 
-# plt.plot(X, label = 'Original Data')
+plt.plot(X, label = 'Original Data')
 plt.plot(Y, label = 'Filtered Data')
-# plt.legend()
+plt.legend()
 plt.show()
 
 # Question 4
@@ -97,8 +97,8 @@ for t in range(2, X.size):
     rhs = b0 *X[t] + b1*X[t-1] + b2*X[t-2]
     Y[t] = (rhs - a1*Y[t-1] - a2*Y[t-2]) / a0
 
-# plt.plot(X, label = 'Original Data')
+plt.plot(X, label = 'Original Data')
 plt.plot(Y, label = 'Filtered Data')
 plt.ylim(-2, 2)
-# plt.legend()
+plt.legend()
 plt.show()
