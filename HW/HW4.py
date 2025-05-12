@@ -143,7 +143,7 @@ def driver_2():
     plt.legend()
     plt.show()
 
-# driver_2()
+driver_2()
 
 # Question 1.1.4.3
 def driver_3():
@@ -182,4 +182,4 @@ def driver_3():
     
     plt.plot(data)
     plt.show()
-driver_3()
+# driver_3()

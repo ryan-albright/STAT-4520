@@ -21,7 +21,6 @@ plt.ylabel('Spectrum')
 plt.show()
 
 # Triangular Window
-print()
 f = (1 / (2 * np.pi)) * np.array([R[0] + 2 * np.sum([(1 - k / M) * R[k] * np.cos(w * k) for k in range(1, M + 1)]) for w in freq])
 plt.plot(freq, f)
 plt.xlabel('Frequency')

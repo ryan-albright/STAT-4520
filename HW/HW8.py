@@ -16,7 +16,7 @@ N = data.size
 mu_x = sum(data) / N
 print(f'The mean is {mu_x}')
 
-var_x = sum((data - mu_x)**2) / N**2
+var_x = sum((data - mu_x)**2) / N
 print(f'The variance is {var_x}')
 
 # Autocovariance function
